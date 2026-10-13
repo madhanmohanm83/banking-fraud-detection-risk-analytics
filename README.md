@@ -6,8 +6,7 @@ An end-to-end machine learning project that analyzes banking transactions, predi
 
 **GitHub Repository:** [View Source Code](https://github.com/madhanmohanm83/banking-fraud-detection-risk-analytics)
 
-**Live Dashboard:** [Launch the Banking Fraud Detection Dashboard](https://banking-fraud-detection-risk-analytics-6oxtrupgnpfggmpzqrlzrk.streamlit.app/)
-
+**Live Dashboard:** [Launch the Banking Fraud Detection Dashboard]https://banking-fraud-detection-risk-analytics-6oxtrupgnpfgqmpzqrlzrk.streamlit.app/
 
 ---
 
