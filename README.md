@@ -17,6 +17,62 @@ Banking fraud can lead to financial losses and reduced customer trust. This proj
 The project includes data analysis, preprocessing, feature engineering, model training, model evaluation, transaction risk scoring, and an interactive dashboard.
 
 This is an educational machine learning project. Its predictions are not a substitute for a bank's production fraud monitoring system.
+## Problem Statement
+
+Banking transactions may contain fraudulent activities that can cause financial losses to customers and financial institutions. Identifying suspicious transactions manually can be time-consuming, especially when many transactions need to be analyzed.
+
+The objective of this project is to analyze banking transaction data and build a machine learning model that predicts potentially fraudulent transactions and assigns risk levels to help prioritize suspicious activity for further review.
+
+**Note:** This project uses a synthetic banking transaction dataset for educational and demonstration purposes. It is not a production banking system.
+
+## Proposed Solution
+
+We developed a machine learning-based Banking Fraud Detection and Risk Analytics system using Python and Scikit-learn. The system analyzes transaction-related features, predicts fraud probability, calculates a risk score, and classifies transactions into risk levels.
+
+An interactive Streamlit dashboard presents transaction statistics, fraud analytics, risk analysis, transaction predictions, and model performance.
+
+## How We Solved the Problem
+
+1. **Data Collection:** Loaded the synthetic banking transaction dataset containing 10,000 records and 20 original columns.
+2. **Exploratory Data Analysis (EDA):** Analyzed transaction patterns, fraud distribution, and relevant features using Pandas, Matplotlib, and Seaborn.
+3. **Data Preprocessing:** Prepared the dataset for machine learning, handled categorical variables through encoding, and removed the transaction identifier from the model inputs.
+4. **Feature Engineering:** Prepared model features and split the dataset into training and testing sets.
+5. **Model Training:** Trained and compared Logistic Regression, Decision Tree, and Random Forest models.
+6. **Model Selection:** Selected Random Forest based on the evaluated model performance.
+7. **Risk Scoring:** Generated fraud probabilities and risk scores, then categorized test transactions into Low, Medium, High, and Critical risk levels.
+8. **Dashboard Development:** Built an interactive Streamlit application to display analytics, risk information, transaction predictions, and model evaluation results.
+9. **Deployment:** Published the dashboard using Streamlit Community Cloud and maintained the project source code in GitHub.
+
+## Model Performance
+
+The selected Random Forest model achieved the following results on the held-out test dataset:
+
+| Metric    | Result |
+| --------- | -----: |
+| Accuracy  |  95.2% |
+| Precision |  82.1% |
+| Recall    |  78.8% |
+| F1 Score  |  80.4% |
+| ROC-AUC   |  97.4% |
+
+These metrics describe performance on this dataset's test split. They do not guarantee the same performance on real-world banking transactions.
+
+## Results and Benefits
+
+* Identifies transactions with a higher predicted probability of fraud.
+* Converts model predictions into risk scores and risk categories.
+* Provides visual summaries of fraud patterns and model performance.
+* Helps demonstrate how machine learning can support transaction risk analysis and fraud-review prioritization.
+* Provides an interactive dashboard accessible through a web browser.
+
+The system is a portfolio and learning project. Its predictions should not be treated as confirmed fraud without further investigation.
+
+## Limitations
+
+* The model was trained and evaluated using synthetic data.
+* Real-world performance may differ because real banking data can contain different patterns.
+* The model may produce false positives and false negatives.
+* Further validation, monitoring, security controls, and testing on representative real-world data would be required before production use.
 
 ## 2. Project Objectives
 
